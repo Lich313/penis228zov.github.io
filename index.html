@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Это мой первый сайт на HTML</p>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav>
+        <a href="#home" class="nav-link">Главная</a>
+        <a href="#about" class="nav-link">О нас</a>
+        <a href="#services" class="nav-link">Услуги</a>
+        <a href="#gallery" class="nav-link">Галерея</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+    </nav>
+
+    <!-- Основное содержимое -->
+    <div class="container">
+        <!-- Главная секция -->
+        <section id="home" class="section">
+            <h2>Главная</h2>
+            <p>Привет! Это главная страница моего сайта. Здесь я буду размещать интересную информацию.</p>
+            <button id="welcome-btn" class="btn">Нажми меня!</button>
+        </section>
+
+        <!-- Секция "О нас" -->
+        <section id="about" class="section">
+            <h2>О нас</h2>
+            <p>Мы - команда энтузиастов, создающих красивые и функциональные сайты.</p>
+            <div class="counter">
+                <p>Счетчик: <span id="counter-value">0</span></p>
+                <button id="increment-btn" class="btn">Увеличить</button>
+            </div>
+        </section>
+
+        <!-- Секция "Услуги" -->
+        <section id="services" class="section">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Создание сайтов</h3>
+                    <p>Профессиональная разработка сайтов любой сложности</p>
+                </div>
+                <div class="service-card">
+                    <h3>Веб-дизайн</h3>
+                    <p>Современный и привлекательный дизайн для вашего проекта</p>
+                </div>
+                <div class="service-card">
+                    <h3>Консультации</h3>
+                    <p>Экспертные консультации по веб-разработке</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "Галерея" -->
+        <section id="gallery" class="section">
+            <h2>Галерея</h2>
+            <div class="gallery" id="image-gallery">
+                <!-- Изображения будут добавлены через JavaScript -->
+            </div>
+        </section>
+
+        <!-- Секция "Контакты" -->
+        <section id="contact" class="section">
+            <h2>Контакты</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </div>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2024 Мой сайт. Все права защищены.</p>
+        <p id="current-time">Текущее время: </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
